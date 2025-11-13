@@ -1,6 +1,18 @@
 #Biểu thức, Toán tử, Nhập xuất dữ lịệu
 #W2A1
 
+#W2A16
+print('W2A16 \n')
+
+print('Spring \nSummer \nAutumn \nWinter')
+print('\n')
+
+#W2A17
+print('W2A17 \n')
+
+print('''  * \n *** \n***** ''')
+print('\n')
+
 #W2A18
 print('W2A18 \n')
 
