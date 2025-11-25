@@ -63,3 +63,99 @@ else:
 
 print('\n')
 
+# Bài 4
+print('Bài 4')
+
+print('Phương trình có dạng ax + b = 0')
+a_B4 = float(input('Nhập số a: '))
+b_B4 = float(input('Nhập số b: '))
+
+def Phuong_Trinh_Bac_Nhat (a, b):
+    Ket_Qua_B4 = (-b)/a
+    return Ket_Qua_B4
+
+print('x =', Phuong_Trinh_Bac_Nhat(a_B4, b_B4))
+
+print('\n')
+
+# Bài 5
+print('Bài 5')
+
+print('Phương trình có dạng ax^2 + bx + c = 0')
+a_B5 = float(input('Nhập số a: '))
+b_B5 = float(input('Nhập số b: '))
+c_B5 = float(input('Nhập số c: '))
+
+def Phuong_Trinh_Bac_Hai (a, b, c):
+    
+    Delta = b**2 - 4*a*c
+    
+    if (Delta < 0):
+        print('Phương trình vô nghiệm')
+    elif (Delta == 0):
+        print('Đây là phương trình bậc nhất')
+        print('x =', -b/(2*a))
+    else:
+        print('Phương trình có 2 nghiệm')
+        print('x1 =', (b + sqrt(Delta))/(2*a))
+        print('x2 =', (b - sqrt(Delta))/(2*a))
+
+if (a_B5 == 0):
+    if (b_B5 == 0):
+        print('Đây không phải phương trình bậc hai')
+    else:
+        print('Đây là phương trình bậc nhất với x =', -(c_B5)/b_B5)
+else:
+    Phuong_Trinh_Bac_Hai(a_B5, b_B5, c_B5)
+
+print('\n')
+
+# Bài 6
+print('Bài 6')
+
+print('Nhập 3 số a, b, c cùng một hàng cách nhau 1 dấu cách')
+a_B6, b_B6, c_B6 = map(float, input('Nhập 3 số a, b, c: ').split())
+
+List_B6 = []
+List_B6.append(a_B6)
+List_B6.append(b_B6)
+List_B6.append(c_B6)
+
+List_B6.sort()
+
+print('Số lớn nhất là:', List_B6[-1])
+
+print('\n')
+
+# Bài 7
+print('Bài 7')
+
+print('Nhập 3 số a, b, c cùng một hàng cách nhau 1 dấu cách')
+a_B7, b_B7, c_B7, d_B7 = map(float, input('Nhập 3 số a, b, c, d: ').split())
+
+List_B7 = []
+List_B7.append(a_B7)
+List_B7.append(b_B7)
+List_B7.append(c_B7)
+List_B7.append(d_B7)
+
+List_B7.sort()
+
+print('Số nhỏ nhất là:', List_B7[0])
+
+print('\n')
+
+# Bài 8
+print('Bài 8')
+
+print('Phương trình có dạng: \n ax + by = m \n cx + dy = n')
+
+a_B8 = float(input('Nhập số a: '))
+b_B8 = float(input('Nhập số b: '))
+c_B8 = float(input('Nhập số c: '))
+d_B8 = float(input('Nhập số d: '))
+m_B8 = float(input('Nhập số m: '))
+n_B8 = float(input('Nhập số n: '))
+
+# def Phuong_Trinh_Bac_Nhat_Hai_An(a, b, c, d, m, n):
+    
