@@ -126,8 +126,71 @@
     
 # print(f'Kết quả của phép toán là: {Tinh_Toan(num1_W5A7, num2_W5A7, operat_W5A7)}')
 
-#W5A8
-print('W5A8')
+# #W5A8
+# print('W5A8')
 
-x_W5A8 = int(input('Nhập số x: '))
-y_W5A8 = int(input('Nhập số y: '))
+# x_W5A8 = int(input('Nhập số x: '))
+# y_W5A8 = int(input('Nhập số y: '))
+
+# def Hamming(x, y):
+#     xor_W5A8 = x ^ y
+
+#     count = 0
+#     while xor_W5A8 > 0:
+#         count += xor_W5A8 & 1
+
+#         xor_W5A8 >>= 1
+
+#     return count
+
+# print(f'Khoảng cách Hamming giữa {x_W5A8} và {y_W5A8} là: {Hamming(x_W5A8, y_W5A8)}')
+
+# #W5A9
+# print('W5A9')
+
+# n_W5A9 = int(input('Nhập số nguyên dương n: '))
+
+# def Tong_Cac_Chu_So(n):
+#     tong = 0
+
+#     while n > 0:
+#         a = n % 10
+#         tong += a
+#         n //= 10
+
+#     return tong
+
+# print(f'Tổng các chữ số của {n_W5A9} là: {Tong_Cac_Chu_So(n_W5A9)}')
+
+#W5A10
+print('W5A10')
+
+a_W5A10 = str(input('Nhập chuỗi a: '))
+b_W5A10 = str(input('Nhập chuỗi b: '))
+
+def Dang_Cau(a: str, b: str) -> bool:
+    if len(a) != len(b):
+        return False
+    
+    mapping_a_to_b = {}
+    mapping_b_to_a = {}
+
+    for char_a, char_b in zip(a, b):
+        if char_a in mapping_a_to_b:
+            if mapping_a_to_b[char_a] != char_b:
+                return False
+        else:
+            mapping_a_to_b[char_a] = char_b
+
+        if char_b in mapping_b_to_a:
+            if mapping_b_to_a[char_b] != char_a:
+                return False
+        else:
+            mapping_b_to_a[char_b] = char_a
+
+    return True
+
+if Dang_Cau(a_W5A10, b_W5A10):
+    print(f'"{a_W5A10}" và "{b_W5A10}" là đẳng cấu')
+else:
+    print(f'"{a_W5A10}" và "{b_W5A10}" không phải là đẳng cấu')
