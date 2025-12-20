@@ -118,6 +118,30 @@
 
 # print(Dem_Do_Dai_Nhat(lst_W7A7))
 
-# W7A8
-print("W7A8")
+# # W7A8
+# print("W7A8")
+
+# lst_W7A8 = [[1, 4], [2, 4], [3, 6], [4, 4]]
+# queries_W7A8 = [2, 3, 4, 5]
+
+# def binary(interval, queries):
+#     for i in queries:
+#         arr = []
+#         for j in interval:
+#             count = 0
+#             if j[0] <= i <= j[1]:
+#                 count = j[1] - j[0] + 1
+#                 if count not in arr:
+#                     arr.append(count)
+#         arr.sort()
+#         if arr:
+#             print(arr[0], end=' ')
+#         else:
+#             print(-1, end=' ')
+                
+# binary(lst_W7A8, queries_W7A8)
+
+# W7A9
+print("W7A9")
+
 
