@@ -141,7 +141,96 @@
                 
 # binary(lst_W7A8, queries_W7A8)
 
-# W7A9
-print("W7A9")
+# # W7A9
+# print("W7A9")
 
+# lst_W7A9 = list(map(int, input().split()))
+
+# def Tim_So_Nho_Hon(arr):
+
+#     result = []
+
+#     for i in range(len(arr)):
+#         count = 0
+#         for j in range(i + 1, len(arr)):
+#             if arr[i] > arr[j]:
+#                 count += 1
+#         result.append(count)
+
+#     return result
+
+# print(Tim_So_Nho_Hon(lst_W7A9))
+            
+# # W7A10
+# print("W7A10")
+
+# lst_W7A10 = list(map(int, input().split()))
+# m_W7A10 = int(input())
+
+# def pre(arr, m):
+#     prefix = [0] * (len(arr) + 1)
+#     for i in range(len(arr)):
+#         prefix[i+1] = (prefix[i] + arr[i]) % m
+    
+#     # Dòng 2: Khởi tạo sorted list của prefix sums
+#     sorted_prefixes = []
+    
+#     # Dòng 3: Biến lưu kết quả
+#     max_result = 0
+    
+#     # Dòng 4: Duyệt qua từng prefix sum
+#     for i in range(1, len(prefix)):
+#         current_prefix = prefix[i]
+        
+#         # Dòng 5: Tìm prefix lớn hơn current_prefix một chút
+#         # bằng binary search
+#         import bisect
+#         pos = bisect.bisect_right(sorted_prefixes, current_prefix)
+        
+#         # Dòng 6: Nếu có phần tử lớn hơn
+#         if pos < len(sorted_prefixes):
+#             max_result = max(max_result, (current_prefix - sorted_prefixes[pos] + m) % m)
+        
+#         # Dòng 7: Cũng xét trường hợp không trừ prefix nào
+#         max_result = max(max_result, current_prefix)
+        
+#         # Dòng 8: Thêm current_prefix vào sorted list
+#         bisect.insort(sorted_prefixes, current_prefix)
+    
+#     # Dòng 9: Trả về kết quả
+#     return max_result
+
+# print(pre(lst_W7A10, m_W7A10))
+
+# # W7A11
+# print("W7A11")
+
+# lst_W7A11 = str(input())
+# target_W7A11 = input()
+
+# import string
+
+# for p in string.punctuation:
+#     lst_W7A11 = lst_W7A11.replace(p, "")
+
+# new_lst_W7A11 = lst_W7A11.split()
+
+# def find_word(arr, target):
+#     dict = {}
+
+#     for i in arr:
+#         if i not in dict:
+#             dict[i] = 1
+#         else:
+#             dict[i] += 1
+
+#     if target in dict:
+#         return dict[target]
+#     else:
+#         return 0
+    
+# print(find_word(new_lst_W7A11, target_W7A11))
+
+# W7A12
+print("W7A12")
 
